@@ -12,11 +12,11 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
-            - run: npx github:Willy-JL/github-stats-box
+            - run: npx github:mrbenoit/github-stats-box
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
 
                   # Edit the following environment variables
-                  GIST_ID: f16c3bde706270ddb7c9cab036a177c6 # The ID portion from your gist url
+                  GIST_ID: 23c4880bfd43c4ff8c341de88b00a31c # The ID portion from your gist url
                   ALL_COMMITS: true # If `true` it will count all commits, if `false` it will count your last year commits
                   K_FORMAT: true # If `true`, large numbers will be formatted with a "k", for example "1.5k"
